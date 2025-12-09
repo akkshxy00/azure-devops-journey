@@ -1,20 +1,2 @@
-# --- MacOS Junk ---
-# When you open a folder on a Mac, it creates this hidden file
-# to remember icon positions. We DON'T want this in our code.
+data/
 .DS_Store
-
-# --- VS Code Settings ---
-# VS Code creates a folder for your local settings.
-# Your settings (blue theme) might annoy me (dark theme), so we ignore them.
-.vscode/
-
-# --- Terraform State (Future Proofing) ---
-# Terraform stores sensitive data (IPs, passwords) in state files.
-# NEVER commit these to GitHub.
-.terraform/
-*.tfstate
-*.tfstate.backup
-
-# --- Logs ---
-# If a script crashes and dumps a log file, we don't want it.
-*.log
